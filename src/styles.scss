@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+/* Initial CSS settings to set everything to 0 */
+
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    padding: 0rem;
+    font-weight: normal;
+    background-color: var(--surface-card);
+}
+
+html {
+    font-size: 14px;
+}

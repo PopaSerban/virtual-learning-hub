@@ -1,0 +1,44 @@
+<p-menubar
+  id="menu-serban"
+  [model]="menuItems"
+  [style]="{
+    border: 'none',
+    padding: '0 calc(90vw - 70%)',
+    background: 'none',
+    borderRadius: '0',
+    position: 'fixed',
+    width: '100%',
+    zIndex: '1000',
+    margin:'auto',
+  }"
+>
+  <ng-template pTemplate="start">
+    <img
+      src="https://primefaces.org/cdn/primeng/images/primeng.svg"
+      height="50"
+      [style]="{ marginTop: '5px', marginRight:'10px'}"
+      class="mr-2"
+    />
+  </ng-template>
+  <ng-template pTemplate="end" style="margin-left: 0">
+    <p-button
+      icon="pi pi-user"
+      label="Login"
+      [style]="{ marginRight: '10px' }"
+      [rounded]="true"
+      [outlined]="true"
+      size="small"
+      severity="danger"
+      (click)="login()"
+    ></p-button>
+    <p-button
+      icon="pi pi-user"
+      label="Get Started"
+      [rounded]="true"
+      [outlined]="false"
+      size="small"
+      severity="danger"
+      (click)="login()"
+    ></p-button>
+  </ng-template>
+</p-menubar>
