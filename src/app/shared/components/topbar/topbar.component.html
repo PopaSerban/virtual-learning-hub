@@ -3,12 +3,9 @@
   [model]="menuItems"
   [style]="{
     border: 'none',
-    padding: '0 calc(90vw - 70%)',
     background: 'none',
     borderRadius: '0',
-    position: 'fixed',
-    width: '100%',
-    zIndex: '1000',
+    position: 'sticky',
     margin:'auto',
   }"
 >
@@ -20,7 +17,7 @@
       class="mr-2"
     />
   </ng-template>
-  <ng-template pTemplate="end" style="margin-left: 0">
+  <ng-template pTemplate="end">
     <p-button
       icon="pi pi-user"
       label="Login"
