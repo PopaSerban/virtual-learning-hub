@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <div class="container">
+    <img class="bg-image" src="assets/imgs/blob-2.svg" alt="">
       <div class="main-layout">
         <nav class="menu-layout">
           <ng-content select="[menu]"></ng-content>
@@ -19,6 +20,14 @@ import { Component } from '@angular/core';
     </div>
   `,
   styles: `
+    .bg-image {
+        position: absolute;
+        top: -300px;
+         width: 200%;
+         height: 200%;
+         background-size: cover;
+        z-index: -1;
+    }
     .container {
         display: flex;
         justify-content: center;
