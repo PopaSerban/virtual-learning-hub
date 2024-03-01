@@ -34,6 +34,20 @@ import { Component } from '@angular/core';
     .menu-layout {
         margin: 0 3rem;
     }
+    @media (max-width: 768px) {
+        .main-layout{
+            width: 95%;
+        }
+        .menu-layout {
+            margin: 0;
+        }
+
+    }
+    @media (min-width: 769px) and (max-width: 1000px) {
+        .menu-layout {
+            margin: 0;
+        }
+    }
     `,
 })
 export class LandingLayoutComponent {}
