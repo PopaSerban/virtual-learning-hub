@@ -11,9 +11,9 @@
 >
   <ng-template pTemplate="start">
     <img
-      [src]='logo'
+      [src]="logo"
       height="50"
-      [style]="{ marginTop: '5px', marginRight:'10px'}"
+      [style]="{ marginTop: '5px', marginRight: '10px' }"
       class="mr-2"
     />
   </ng-template>
@@ -21,9 +21,8 @@
     <p-button
       icon="pi pi-user"
       label="Login"
-      [style]="{ marginRight: '10px' }"
-      [rounded]="true"
-      [outlined]="true"
+      [style]="{ marginRight: '10px', color: 'red' }"
+      [link]="true"
       size="small"
       severity="danger"
       (click)="login()"
