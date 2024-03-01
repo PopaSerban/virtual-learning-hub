@@ -1,5 +1,4 @@
 <p-menubar
-  id="menu-serban"
   [model]="menuItems"
   [style]="{
     border: 'none',
@@ -21,10 +20,9 @@
     <p-button
       icon="pi pi-user"
       label="Login"
-      [style]="{ marginRight: '10px', color: 'red' }"
+      [style]="{ marginRight: '10px' }"
       [link]="true"
       size="small"
-      severity="danger"
       (click)="login()"
     ></p-button>
     <p-button
@@ -33,7 +31,6 @@
       [rounded]="true"
       [outlined]="false"
       size="small"
-      severity="danger"
       (click)="login()"
     ></p-button>
   </ng-template>
