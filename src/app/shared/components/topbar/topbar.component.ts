@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MenubarModule} from 'primeng/menubar'
-import { menuItems } from './models/menu-items.model';
 import { MenuItem } from 'primeng/api';
 import { ButtonModule } from 'primeng/button';
 
@@ -12,7 +11,8 @@ import { ButtonModule } from 'primeng/button';
 
 })
 export class TopbarComponent {
-  menuItems: MenuItem[] = menuItems;
+  @Input()menuItems: MenuItem[] = [];
+  @Input()logo: string = 'https://primefaces.org/cdn/primeng/images/primeng.svg';
   login(): void {
     console.log('Login');
   }
