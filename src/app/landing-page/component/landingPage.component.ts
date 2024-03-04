@@ -37,9 +37,7 @@ import { LandingLayoutComponent } from '../../shared/components/landingLayout/la
         font-size: 1.5rem;
     }
     .img-fluid{
-    position: relative;
-    top: -76px;
-    left: 373px;
+        flex-shrink: 1;
     }
     `,
 })
