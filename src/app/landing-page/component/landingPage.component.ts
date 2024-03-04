@@ -20,16 +20,20 @@ import { LandingLayoutComponent } from '../../shared/components/landingLayout/la
     }
     .title{
         color: white;
-        font-size: 5.5rem;
+        font-size: 7.5rem;
         margin-bottom: 2rem;
     }
     .presentation {
         margin-top: 6rem;
-        width: 75%;
+        width: 65%;
+    }
+    .register{
+        width: 100%;
+        margin-top: 6rem;
     }
     .lead{
-        
         margin-bottom: 2rem;
+        font-size: 1.6rem;
         color: black;
     }
     p.lead{

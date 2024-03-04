@@ -5,13 +5,13 @@
     background: 'none',
     borderRadius: '0',
     position: 'sticky',
-    margin:'auto',
+    fontSize: '1.5rem',
   }"
 >
   <ng-template pTemplate="start">
     <img
       [src]="logo"
-      height="50"
+      height="60"
       [style]="{ marginTop: '5px', marginRight: '10px' }"
       class="mr-2"
     />
@@ -20,7 +20,7 @@
     <p-button
       icon="pi pi-user"
       label="Login"
-      [style]="{ marginRight: '10px', color: 'white'}"
+      [style]="{ marginRight: '10px', color: 'white' }"
       [link]="true"
       size="large"
       (click)="login()"
