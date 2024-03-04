@@ -1,0 +1,10 @@
+<p-card [header]="header" [subheader]="subHeader" [style]="style">
+    <ng-template pTemplate="header">
+        <img alt="Card" [src]="imgSrc" />
+    </ng-template>
+    <ng-content select="[content]"></ng-content>
+    <ng-template pTemplate="footer">
+        <ng-content select="[footer]">
+        </ng-content>
+    </ng-template>
+</p-card>

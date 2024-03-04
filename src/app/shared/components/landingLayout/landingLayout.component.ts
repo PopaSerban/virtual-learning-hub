@@ -15,7 +15,6 @@ import { Component } from '@angular/core';
       </div>
       <div class="container footer">
           <footer class="footer-layout">
-            <h1>dsa</h1>
               <ng-content select="[footer]"></ng-content>
             </footer>
       </div>
