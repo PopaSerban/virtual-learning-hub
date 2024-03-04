@@ -29,7 +29,7 @@ import { LandingLayoutComponent } from '../../shared/components/landingLayout/la
     }
     .register{
         width: 100%;
-        margin-top: 6rem;
+        margin-top: 11rem;
     }
     .lead{
         margin-bottom: 2rem;
