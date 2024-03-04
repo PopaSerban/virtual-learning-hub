@@ -5,13 +5,13 @@ import { MenuItem } from 'primeng/api';
 import { PanelModule } from 'primeng/panel';
 import { ButtonModule } from 'primeng/button';
 import { LandingLayoutComponent } from '../../shared/components/landingLayout/landingLayout.component';
+import { CardComponent } from '../../shared/components/card/card.component';
 
 @Component({
-  selector: 'lh-landing-page',
-  templateUrl: './landingPage.component.html',
-  standalone: true,
-  imports: [TopbarComponent, PanelModule, LandingLayoutComponent, ButtonModule],
-  styles: `
+    selector: 'lh-landing-page',
+    templateUrl: './landingPage.component.html',
+    standalone: true,
+    styles: `
     .section-1{
         margin-top: 3rem;
         display: flex;
@@ -44,6 +44,7 @@ import { LandingLayoutComponent } from '../../shared/components/landingLayout/la
         flex-shrink: 1;
     }
     `,
+    imports: [TopbarComponent, PanelModule, LandingLayoutComponent, ButtonModule, CardComponent]
 })
 export class LandingPageComponent {
   menuItems: MenuItem[] = menuItems;
