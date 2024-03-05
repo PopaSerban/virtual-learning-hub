@@ -1,0 +1,61 @@
+<lh-landing-layout>
+  <lh-topbar menu [menuItems]="menuItems"></lh-topbar>
+  <div body class="body-container">
+    <section class="section-1">
+      <div class="col-md-6">
+        <h1 class="title">{{ welcomeSection.title }}</h1>
+        <div class="presentation">
+          <h2 class="lead">
+            {{ welcomeSection.presentation }}
+          </h2>
+          <p class="lead">
+            {{ welcomeSection.presentation_2 }}
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="d-flex flex-end">
+      <div class="register d-flex flex-center align-start">
+        <p-button
+          label="Register now"
+          size="large"
+          [rounded]="true"
+          [style]="{ fontSize: '2.7rem' }"
+        ></p-button>
+      </div>
+      <img
+        src="assets/imgs/landing-pres-img.svg"
+        alt="section-1"
+        class="flex-end"
+      />
+    </section>
+    <section class="d-flex flex-center">
+      <div
+        class="text"
+        style="font-size: 4rem; width: 70%; margin-bottom: 4rem"
+      >
+        <h3
+          class="orange-text"
+          style="
+            color: orange;
+            font-weight: bold;
+            font-size: 2.3rem;
+            text-align: center;
+          "
+        >
+          {{ section2.orangeTitle }}
+        </h3>
+        <p
+          class="question-text"
+          style="font-weight: bold; font-size: 2.5rem; text-align: center"
+        >
+          {{ section2.title }}
+        </p>
+        <p class="centered-text" style="text-align: center; font-size: 2.5rem">
+          {{ section2.text }}
+        </p>
+      </div>
+    </section>
+    <lh-card-section [cards]="cards"></lh-card-section>
+  </div>
+</lh-landing-layout>

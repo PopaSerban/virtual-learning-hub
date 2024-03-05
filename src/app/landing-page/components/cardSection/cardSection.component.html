@@ -1,0 +1,18 @@
+<section class="d-flex flex-around align-center">
+  @for (card of cards; track $index) {
+  <lh-card
+    [header]="card.header"
+    [subHeader]="card.subheader"
+    [style]="card.style"
+    [imgSrc]="card.imgSrc"
+  >
+    <div content>
+      <p>{{ card.text }}</p>
+    </div>
+    <div footer>
+      <p-button label="Explore" size="large" [rounded]="true"></p-button>
+    </div>
+  </lh-card>
+
+  }
+</section>

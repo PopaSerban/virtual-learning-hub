@@ -6,6 +6,9 @@ import { PanelModule } from 'primeng/panel';
 import { ButtonModule } from 'primeng/button';
 import { LandingLayoutComponent } from '../../shared/components/landingLayout/landingLayout.component';
 import { CardComponent } from '../../shared/components/card/card.component';
+import { CardSectionComponent } from "./cardSection/cardSection.component";
+import { CardInterface } from '../models/card.interface';
+import { environment } from '../../../environments/environment.development';
 
 @Component({
     selector: 'lh-landing-page',
@@ -44,8 +47,11 @@ import { CardComponent } from '../../shared/components/card/card.component';
         flex-shrink: 1;
     }
     `,
-    imports: [TopbarComponent, PanelModule, LandingLayoutComponent, ButtonModule, CardComponent]
+    imports: [TopbarComponent, PanelModule, LandingLayoutComponent, ButtonModule, CardComponent, CardSectionComponent]
 })
 export class LandingPageComponent {
   menuItems: MenuItem[] = menuItems;
+  welcomeSection = environment.landingPage.welcomeSection;
+  section2 = environment.landingPage.section2;
+  cards: CardInterface[] = environment.landingPage.cardSections;
 }
