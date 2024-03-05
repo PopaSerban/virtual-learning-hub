@@ -16,7 +16,7 @@ export const environment = {
                 subheader: 'Explore our courses',
                 style: { margin: '0 25px'},
                 text:' Our courses are designed to help you grow and develop your skills. It uses utility classes for typography and spacing to space content out within the larger container.',
-                imgSrc: '/assets/imgs/cards/card-3.jpg'
+                imgSrc: '/assets/imgs/cards/card-1.jpg'
             },
             {
                 header: 'Courses',
