@@ -21,8 +21,8 @@ import { Component, Input } from "@angular/core";
         padding: 1rem 0;
     }
     .fill-space{
-        width: -webkit-fill-available;
-        height: -webkit-fill-available;
+        width: 100%;
+        height: 100%;
     }
     .icon-holder{
         width: 100px;
