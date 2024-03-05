@@ -7,9 +7,17 @@ import { TabletComponent } from '../../../shared/components/tablet/tablet.compon
   templateUrl: './advantagesSection.component.html',
   standalone: true,
   styles: `
+  .splash{
+    background-image: url('/assets/imgs/blob-2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .advantages{
     width: 100%;
     margin: 3rem 0;
+  }
+  .advantages-section{
+    margin: 4rem 0;
   }
   .right-container{
     width: 50%;

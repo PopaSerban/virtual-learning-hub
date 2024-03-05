@@ -7,6 +7,7 @@ import { Component, Input } from "@angular/core";
     styles: `
     .tablet-outer{
         border: 1px solid #e5e5e5;
+        background-color: white;
         border-radius: 15px;
         padding: 0.5rem;
         min-height: 150px;
