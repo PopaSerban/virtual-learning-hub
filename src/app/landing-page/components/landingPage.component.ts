@@ -6,15 +6,16 @@ import { PanelModule } from 'primeng/panel';
 import { ButtonModule } from 'primeng/button';
 import { LandingLayoutComponent } from '../../shared/components/landingLayout/landingLayout.component';
 import { CardComponent } from '../../shared/components/card/card.component';
-import { CardSectionComponent } from "./cardSection/cardSection.component";
+import { CardSectionComponent } from './cardSection/cardSection.component';
 import { CardInterface } from '../models/card.interface';
 import { environment } from '../../../environments/environment.development';
+import { AdvantagesSectionComponent } from './advantagesSection/advantagesSection.component';
 
 @Component({
-    selector: 'lh-landing-page',
-    templateUrl: './landingPage.component.html',
-    standalone: true,
-    styles: `
+  selector: 'lh-landing-page',
+  templateUrl: './landingPage.component.html',
+  standalone: true,
+  styles: `
     .section-1{
         margin-top: 3rem;
         display: flex;
@@ -47,11 +48,21 @@ import { environment } from '../../../environments/environment.development';
         flex-shrink: 1;
     }
     `,
-    imports: [TopbarComponent, PanelModule, LandingLayoutComponent, ButtonModule, CardComponent, CardSectionComponent]
+  imports: [
+    TopbarComponent,
+    PanelModule,
+    LandingLayoutComponent,
+    ButtonModule,
+    CardComponent,
+    CardSectionComponent,
+    AdvantagesSectionComponent,
+  ],
 })
 export class LandingPageComponent {
   menuItems: MenuItem[] = menuItems;
   welcomeSection = environment.landingPage.welcomeSection;
   section2 = environment.landingPage.section2;
   cards: CardInterface[] = environment.landingPage.cardSections;
+  rightTablets = environment.landingPage.rightTablets;
+  leftTablets = environment.landingPage.leftTablets;
 }

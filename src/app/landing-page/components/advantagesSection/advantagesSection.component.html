@@ -1,0 +1,12 @@
+<div class="advantages d-flex">
+    <div class="left-container d-flex flex-between flex-column">
+        @for (tablet of leftTablets; track $index) {
+            <lh-tablet [icon]="tablet.icon" [text]="tablet.text"></lh-tablet>
+        } 
+    </div>
+    <div class="right-container d-flex flex-center flex-column">
+        @for (tablet of rightTablets; track $index) {
+            <lh-tablet [icon]="tablet.icon" [text]="tablet.text"></lh-tablet>
+        }
+    </div>
+</div>

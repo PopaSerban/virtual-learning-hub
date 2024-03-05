@@ -33,6 +33,30 @@ export const environment = {
                 imgSrc: '/assets/imgs/cards/card-3.jpg'
             },
 
+        ],
+        rightTablets: [
+            {
+                icon: 'fa fa-graduation-cap',
+                text: 'Learn from the best'
+            },
+            {
+                icon: 'fa fa-graduation-cap',
+                text: 'Learn from the best'
+            },
+        ],
+        leftTablets: [
+            {
+                icon: 'fa fa-graduation-cap',
+                text: 'Learn from the best'
+            },
+            {
+                icon: 'fa fa-graduation-cap',
+                text: 'Learn from the best'
+            },
+            {
+                icon: 'fa fa-graduation-cap',
+                text: 'Learn from the best'
+            },
         ]
     }
 };

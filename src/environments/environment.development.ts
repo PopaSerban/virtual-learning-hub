@@ -33,6 +33,30 @@ export const environment = {
                 imgSrc: '/assets/imgs/cards/card-3.jpg'
             },
 
+        ],
+        rightTablets: [
+            {
+                icon: 'pi pi-check-square',
+                text: 'Learn from the best'
+            },
+            {
+                icon: 'pi pi-check-square',
+                text: 'Learn from the best'
+            },
+        ],
+        leftTablets: [
+            {
+                icon: 'pi pi-check-square',
+                text: 'Learn from the best'
+            },
+            {
+                icon: 'pi pi-check-square',
+                text: 'Learn from the best'
+            },
+            {
+                icon: 'pi pi-check-square',
+                text: 'Learn from the best'
+            },
         ]
     }
 };
