@@ -4,6 +4,10 @@ import { CardModule } from "primeng/card";
     selector: 'lh-card',
     templateUrl: './card.component.html',
     imports: [CardModule],
+    styles: `
+    ::ng-deep .p-card{
+        border-radius: 25px;
+    }`,
     standalone: true,
 })
 export class CardComponent {

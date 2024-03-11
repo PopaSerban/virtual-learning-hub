@@ -1,29 +1,31 @@
 <div class="container">
-  <div class="align-center">
-    <div style="text-align: center; padding-top: 218px">
-      <h1>Rated 4.95 in over 450 real person reviews</h1>
-      <p>
-        <span
-          >Read why thousands of companies and operators love Learning
-          Hub.</span
-        >
-      </p>
-      <p-rating
-        [(ngModel)]="rating"
-        [cancel]="false"
-        [readonly]="true"
-      ></p-rating>
-    </div>
-  </div>
-  <div class="col-md-6">
+ <div class=" d-flex flex-center col-md-6 column">
+    <div class="align-center" style="margin-top: 100px;">
+        <div class=" text-center">
+          <h1 class="rated">Rated 4.95 in over 450 real person reviews</h1>
+          <p>
+            <span
+              >Read why thousands of companies and operators love Learning
+              Hub.</span
+            >
+          </p>
+          <p-rating
+            [(ngModel)]="rating"
+            [cancel]="false"
+            [readonly]="true"
+          ></p-rating>
+        </div>
+      </div>
+ </div>
+  <div class="d-flex col-md-6 column">
     <lh-user-card class="item"></lh-user-card>
     <lh-user-card class="item"></lh-user-card>
   </div>
-  <div class="col-md-6">
+  <div class="d-flex col-md-6 column">
     <lh-user-card class="item"></lh-user-card>
     <lh-user-card class="item"></lh-user-card>
   </div>
-  <div class="col-md-6">
+  <div class="d-flex col-md-6 column">
     <lh-user-card class="item"></lh-user-card>
   </div>
 </div>

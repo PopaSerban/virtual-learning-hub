@@ -15,7 +15,13 @@ import { FormsModule } from "@angular/forms";
     .item{
         flex-grow: 1;
         flex-basis: 200;
-        margin: 20px;
+        margin: 10px;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .rated{
+        margin-top: 20px
     }
     `,
     standalone: true,

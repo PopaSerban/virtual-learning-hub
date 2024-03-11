@@ -7,6 +7,11 @@ import { ButtonModule } from 'primeng/button';
   selector: 'lh-topbar',
   templateUrl: './topbar.component.html',
   standalone: true,
+  styles: `
+  ::ng-deep .p-menuitem-text, ::ng-deep .p-menuitem-icon{
+    color: white;
+  }
+  `,
   imports: [MenubarModule, ButtonModule],
 
 })
