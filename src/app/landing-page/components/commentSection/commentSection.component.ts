@@ -1,5 +1,7 @@
 import { Component } from "@angular/core";
 import { UserCardComponent } from "../../../shared/components/userCard/userCard.component";
+import { RatingModule } from "primeng/rating";
+import { FormsModule } from "@angular/forms";
 
 @Component({
     selector: 'lh-comment-section',
@@ -7,6 +9,7 @@ import { UserCardComponent } from "../../../shared/components/userCard/userCard.
     styles: `
     .container{
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
     }
     .item{
@@ -16,8 +19,8 @@ import { UserCardComponent } from "../../../shared/components/userCard/userCard.
     }
     `,
     standalone: true,
-    imports: [UserCardComponent]
+    imports: [UserCardComponent, RatingModule, FormsModule]
 })
 export class CommentSectionComponent{
-
+    rating: number = 5;
 }
