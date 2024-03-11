@@ -10,7 +10,7 @@ import { Component, Input } from "@angular/core";
         background-color: white;
         border-radius: 15px;
         padding: 0.5rem;
-        min-height: 150px;
+        min-height: 100px;
         margin: 1rem 1.5rem;
     }
     .tablet-inner{
@@ -18,16 +18,16 @@ import { Component, Input } from "@angular/core";
         background-color: #f5f5f5;
     }
     .content{
-        padding: 1rem 0;
+        padding: 2rem 0;
     }
     .fill-space{
         width: 100%;
         height: 100%;
     }
     .icon-holder{
-        width: 100px;
-        height: 100px;
-        padding: 0.5rem;
+        width: 60px;
+        height: 60px;
+        padding: 0.9rem;
         background-color: white;
         border-radius: 10px;
     }
