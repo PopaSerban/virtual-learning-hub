@@ -24,7 +24,7 @@ import { AdvantagesSectionComponent } from './advantagesSection/advantagesSectio
     }
     .title{
         color: white;
-        font-size: 7.5rem;
+        font-size: 5.5rem;
         margin-bottom: 2rem;
     }
     .presentation {
@@ -37,7 +37,7 @@ import { AdvantagesSectionComponent } from './advantagesSection/advantagesSectio
     }
     .lead{
         margin-bottom: 2rem;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         color: black;
     }
     p.lead{
@@ -46,6 +46,9 @@ import { AdvantagesSectionComponent } from './advantagesSection/advantagesSectio
     }
     .img-fluid{
         flex-shrink: 1;
+    }
+    .welcome-image{
+      width: 60%;
     }
     `,
   imports: [

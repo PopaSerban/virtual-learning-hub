@@ -24,6 +24,7 @@ import { Component } from '@angular/core';
     .container {
         background-image: url('/assets/imgs/blob-2.svg');
         background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -31,7 +32,7 @@ import { Component } from '@angular/core';
        
     }
     .main { 
-        background-size: 243rem 242rem;
+        background-size: 186em 257em;
         background-position: 50% -114rem;
         height: 100%;
     }
@@ -40,11 +41,11 @@ import { Component } from '@angular/core';
     .main-layout {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 60%;
         height: 100%;
     }
     .menu-layout {
-        margin: 0 3rem;
+        // margin: 0 3rem;
     }
     @media (max-width: 768px) {
         .main-layout{
