@@ -2,7 +2,7 @@
   <lh-topbar menu [menuItems]="menuItems"></lh-topbar>
   <div body class="body-container">
     <section class="section-1">
-      <div class="col-md-6">
+      <div class="welcome-container">
         <h1 class="title">{{ welcomeSection.title }}</h1>
         <div class="presentation">
           <h2 class="lead">
@@ -61,5 +61,6 @@
       [leftTablets]="leftTablets"
       [rightTablets]="rightTablets"
     ></lh-advantages-section>
+    <lh-comment-section></lh-comment-section>
   </div>
 </lh-landing-layout>

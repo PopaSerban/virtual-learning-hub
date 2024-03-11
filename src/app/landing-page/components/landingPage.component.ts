@@ -10,12 +10,13 @@ import { CardSectionComponent } from './cardSection/cardSection.component';
 import { CardInterface } from '../models/card.interface';
 import { environment } from '../../../environments/environment.development';
 import { AdvantagesSectionComponent } from './advantagesSection/advantagesSection.component';
+import { CommentSectionComponent } from "./commentSection/commentSection.component";
 
 @Component({
-  selector: 'lh-landing-page',
-  templateUrl: './landingPage.component.html',
-  standalone: true,
-  styles: `
+    selector: 'lh-landing-page',
+    templateUrl: './landingPage.component.html',
+    standalone: true,
+    styles: `
     .section-1{
         margin-top: 3rem;
         display: flex;
@@ -51,15 +52,16 @@ import { AdvantagesSectionComponent } from './advantagesSection/advantagesSectio
       width: 60%;
     }
     `,
-  imports: [
-    TopbarComponent,
-    PanelModule,
-    LandingLayoutComponent,
-    ButtonModule,
-    CardComponent,
-    CardSectionComponent,
-    AdvantagesSectionComponent,
-  ],
+    imports: [
+        TopbarComponent,
+        PanelModule,
+        LandingLayoutComponent,
+        ButtonModule,
+        CardComponent,
+        CardSectionComponent,
+        AdvantagesSectionComponent,
+        CommentSectionComponent
+    ]
 })
 export class LandingPageComponent {
   menuItems: MenuItem[] = menuItems;
