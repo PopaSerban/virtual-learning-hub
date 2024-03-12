@@ -8,6 +8,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     --primary-orange: #FFC106;
+    --primary-gradient: linear-gradient(45deg, #8398DF, #D3A4EF);
 }
 
 body {
@@ -19,6 +20,9 @@ body {
 .primary-orange{
     color: var(--primary-orange);
 }
+.primary-gradient{
+    background: var(--primary-gradient);
+}
 
 html {
     font-size: 14px;
@@ -26,6 +30,12 @@ html {
 
 .d-flex{
     display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-nowrap{
+    flex-wrap: nowrap;
 }
 .flex-end {
     justify-content: flex-end;

@@ -11,6 +11,7 @@ import { CardInterface } from '../models/card.interface';
 import { environment } from '../../../environments/environment.development';
 import { AdvantagesSectionComponent } from './advantagesSection/advantagesSection.component';
 import { CommentSectionComponent } from "./commentSection/commentSection.component";
+import { FooterComponent } from "./footer/footer.component";
 
 @Component({
     selector: 'lh-landing-page',
@@ -60,7 +61,8 @@ import { CommentSectionComponent } from "./commentSection/commentSection.compone
         CardComponent,
         CardSectionComponent,
         AdvantagesSectionComponent,
-        CommentSectionComponent
+        CommentSectionComponent,
+        FooterComponent
     ]
 })
 export class LandingPageComponent {
