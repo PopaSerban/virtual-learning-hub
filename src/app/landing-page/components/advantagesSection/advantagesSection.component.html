@@ -1,30 +1,29 @@
 <section class="advantages-section">
   <div class="text-container d-flex flex-start align-center">
-    <div class="title" style="width: 90%;">
-        <h1 style="font-size: 4rem; font-weight: 800; color: black">
-          Effortless LLC Creation Starting an LLC Can Be Daunting and Expensive.
-        </h1>
-        <div class="content" style="width: 70%;">
-            <h2>
-                There's a lot that goes into filing an LLC. With various state
-                requirements, multiple steps and a lot of important documentation, even
-                the smallest mistake can end up costing you. That's where we come in.
-            </h2>
-        </div>
+    <div class="title" style="width: 90%">
+      <h1 style="font-size: 4rem; font-weight: 800; color: black">
+        {{ title.leftSide }}
+        <span class="primary-orange">{{ title.middle }}</span> {{ title.end }}
+      </h1>
+      <div class="content" style="width: 70%">
+        <h2>
+          {{ description }}
+        </h2>
+      </div>
     </div>
   </div>
   <div class="splash d-flex flex-center align-center">
-      <div class="advantages d-flex">
-        <div class="left-container d-flex flex-between flex-column">
-          @for (tablet of leftTablets; track $index) {
-          <lh-tablet [icon]="tablet.icon" [text]="tablet.text"></lh-tablet>
-          }
-        </div>
-        <div class="right-container d-flex flex-center flex-column">
-          @for (tablet of rightTablets; track $index) {
-          <lh-tablet [icon]="tablet.icon" [text]="tablet.text"></lh-tablet>
-          }
-        </div>
+    <div class="advantages d-flex">
+      <div class="left-container d-flex flex-between flex-column">
+        @for (tablet of leftTablets; track $index) {
+        <lh-tablet [icon]="tablet.icon" [text]="tablet.text"></lh-tablet>
+        }
       </div>
+      <div class="right-container d-flex flex-center flex-column">
+        @for (tablet of rightTablets; track $index) {
+        <lh-tablet [icon]="tablet.icon" [text]="tablet.text"></lh-tablet>
+        }
+      </div>
+    </div>
   </div>
 </section>

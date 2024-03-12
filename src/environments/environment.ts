@@ -36,27 +36,35 @@ export const environment = {
         ],
         rightTablets: [
             {
-                icon: 'fa fa-graduation-cap',
+                icon: 'pi pi-check-square',
                 text: 'Learn from the best'
             },
             {
-                icon: 'fa fa-graduation-cap',
+                icon: 'pi pi-check-square',
                 text: 'Learn from the best'
             },
         ],
         leftTablets: [
             {
-                icon: 'fa fa-graduation-cap',
+                icon: 'pi pi-check-square',
                 text: 'Learn from the best'
             },
             {
-                icon: 'fa fa-graduation-cap',
+                icon: 'pi pi-check-square',
                 text: 'Learn from the best'
             },
             {
-                icon: 'fa fa-graduation-cap',
+                icon: 'pi pi-check-square',
                 text: 'Learn from the best'
             },
-        ]
+        ],
+        advantagesSection: {
+            title: {
+                leftSide: 'Efortless ',
+                middle: 'LLC Creation ',
+                end: 'Starting an LLC Can Be Daunting and Expensive.'
+            },
+            description: 'There\"s a lot that goes into filing an LLC. With various state requirements, multiple steps and a lot of important documentation, even the smallest mistake can end up costing you. That\"s where we come in.'
+        }
     }
 };

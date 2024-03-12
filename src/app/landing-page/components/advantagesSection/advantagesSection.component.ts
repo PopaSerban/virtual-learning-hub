@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { TabletInterface } from '../../../shared/components/tablet/model/tablet.model';
 import { TabletComponent } from '../../../shared/components/tablet/tablet.component';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'lh-advantages-section',
@@ -31,4 +32,6 @@ import { TabletComponent } from '../../../shared/components/tablet/tablet.compon
 export class AdvantagesSectionComponent {
   @Input() rightTablets: TabletInterface[] = [];
   @Input() leftTablets: TabletInterface[] = [];
+  title = environment.landingPage.advantagesSection.title;
+  description = environment.landingPage.advantagesSection.description;
 }

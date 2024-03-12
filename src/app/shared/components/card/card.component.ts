@@ -7,6 +7,11 @@ import { CardModule } from "primeng/card";
     styles: `
     ::ng-deep .p-card{
         border-radius: 25px;
+        // background: linear-gradient(45deg, #8398DF, #D3A4EF);
+        border: 2px solid #8398DF;
+    }
+    ::ng-deep .p-card-header{
+        height: 295px;
     }`,
     standalone: true,
 })
